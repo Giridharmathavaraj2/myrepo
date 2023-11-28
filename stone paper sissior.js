@@ -1,3 +1,4 @@
+//script for stone paper sissior
 let playGame = confirm("shall we start stone paper sissior game");
 if(playGame){
     var playerChoice = prompt("Please enter your choice stone, paper, sissior")
