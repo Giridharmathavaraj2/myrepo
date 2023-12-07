@@ -4,7 +4,7 @@ function digitalClock(){
     let hours = new Date().getHours();
     let min = new Date().getMinutes();
     let sec = new Date().getSeconds();
-    
+    // it is for 12 -12 hours
     let txt ="AM"
     if(hours >12){
         hours = hours -12;
@@ -17,11 +17,11 @@ function digitalClock(){
     hours = hours <10? "0"+hours:hours;
     min = min<10 ? "0"+min :min;
     sec = sec <10 ?"0"+sec :sec;
-    console.log(time)
-    console.log(hours)
-    console.log(min)
-    console.log(sec)
-    console.log(txt)
+    // console.log(time)
+    // console.log(hours)
+    // console.log(min)
+    // console.log(sec)
+    // console.log(txt)
     clock.innerHTML=(`${hours} : ${min} : ${sec} ${txt}`)
 }
 digitalClock()
