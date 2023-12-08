@@ -2,7 +2,7 @@ const hour = document.querySelector(".hours");
 const minute = document.querySelector(".minutes")
 const second = document.querySelector(".seconds")
 
-
+// rotation is add in the css file  as the var
 
 function runClock(){ 
     const time = new Date();
