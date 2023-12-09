@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+/*you can download the font from the google for digital letters  */
+ @font-face {
+    font-family: digital-7;
+    src: url('../font/digital-7/digital-7.ttf');
+    }
 *{
     margin: 0;
     padding: 0;
@@ -63,10 +68,7 @@
     
 
  }
- @font-face {
-    font-family: digital-7;
-    src: url('../font/digital-7/digital-7.ttf');
-    }
+
     .start{
         background-color: green;
         font-size: 20px;
