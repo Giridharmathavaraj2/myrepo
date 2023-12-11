@@ -1,3 +1,4 @@
+// it is only for border
 document.addEventListener("DOMContentLoaded",function(){
     const allBorder =document.getElementById("all");
     const border =document.getElementById("border");
