@@ -1,5 +1,3 @@
-
-
 const model = document.createElement('div');
 model.id = 'model';
 document.body.appendChild(model);
