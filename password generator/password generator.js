@@ -8,7 +8,6 @@ const smallElement = document.querySelector("#small");
 const symbolElement = document.querySelector("#symbol");
 const frmElement = document.querySelector('#yourFormId');
 
-// Rest of your code...
 
  btncopy.addEventListener('click', async ()=>{
     const pass = outputElement.value;
