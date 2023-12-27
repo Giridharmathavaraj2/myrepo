@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    }
+    #todolist{
+        margin:30px auto;
+        width: 300px;
+    }
+    ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 5px 5px red;
+          
+        }
+        .delete{
+            color: crimson;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+    <div id="todolist">
+        <h1> To-Do List</h1>
+        <input type="text" name="" id="newtask" placeholder="Add a new task">
+        <button id="addtask">Add</button>
+        <ul id="task">
+
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#addtask").click(function(){
+                var newTask =$("#newtask").val()
+                if(newTask !==""){
+                    $("#task").append("<li>"+newTask+"<span class='delete'>X</span></li>")
+                    $("#newtask").val("");
+                }
+            })
+            $("#task").on('click',".delete",function(){
+                $(this).parent().remove()
+            })
+        })
+    </script>
+    
+</body>
+</html>
